@@ -18,7 +18,7 @@ st.set_page_config(
 # ── Load model bundle ─────────────────────────────────────────────────────────
 @st.cache_resource
 def load_bundle():
-    path = os.path.join(os.path.dirname(__file__), "RandForest_Model.pkl")
+    path = os.path.join(os.path.dirname(__file__), "F1_Model.pkl")
     bundle = joblib.load(path)
     return bundle["Model"], bundle["Categorical_Encoder"], bundle["Numerical_Encoder"]
 
